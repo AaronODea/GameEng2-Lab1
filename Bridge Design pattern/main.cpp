@@ -24,3 +24,17 @@ int main()
 	HandleToCharacter handle; handle->Print();
 
 }
+
+
+class DrawAPI
+{
+public:
+	virtual void Draw() = 0;
+};
+
+class DrawImpl : public DrawAPI
+{
+public:
+	void Draw() { std::cout << "Draw impl" << std::endl; }
+};
+
