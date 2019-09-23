@@ -5,6 +5,7 @@ class Character
 {
 public:
 	Character() {}
+	~Character() {}
 	void Print() { std::cout << "Printing Character" << std::endl; }
 };
 
@@ -22,7 +23,8 @@ int main()
 {
 
 	HandleToCharacter handle; handle->Print();
-
+	//delete handle->~Character;
+	system("pause");
 }
 
 

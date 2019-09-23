@@ -7,6 +7,7 @@ Graphic::Graphic()
 
 Graphic::~Graphic()
 {
+	std::cout << "hit ";
 }
 
 void Graphic::Draw()

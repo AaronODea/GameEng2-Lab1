@@ -50,5 +50,9 @@ int main() {
 	{
 		characters[i]->draw();
 	}
+	for (int i = 0; i < characters.size(); i++)
+	{
+		delete characters.at(i);
+	}
 
 }

@@ -17,6 +17,8 @@ public:
 class Character
 {
 public:
+	Character() {};
+	~Character() {};
 	virtual void Draw() = 0;
 };
 
@@ -37,6 +39,8 @@ int main(void)
 	DrawAPI* api = new DrawImpl();
 	Character* character = new Player(api);
 	character->Draw();
+	delete character;
 	std::cin.get();
+
 
 }
